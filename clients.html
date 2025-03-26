@@ -1,52 +1,71 @@
+
 <!DOCTYPE html>
 <html lang="ar">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>بعض عملائنا - شركة الدكتور محمد الأشيقر</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>عملاؤنا - شركة الدكتور محمد الأشيقر</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <div class="logo-container">
-            <img src="assets/images/logo.jpg" alt="شعار شركة الدكتور محمد الأشيقر" class="logo">
-        </div>
-        <nav>
-           <nav>
-            <ul>
-<li><a href="index.html" class="nav-link" data-lang="home">الصفحة الرئيسية</a></li>
-<li><a href="services.html" class="nav-link" data-lang="services">خدماتنا</a></li>
-<li><a href="about.html" class="nav-link" data-lang="about">من نحن</a></li>
-<li><a href="clients.html" class="nav-link" data-lang="clients">بعض عملائنا</a></li> <li><a href="contact.html" class="nav-link" data-lang="contact">اتصل بنا</a></li>
-            </ul>
-        </nav>
-<!-- زر تغيير اللغة -->
-        <div class="language-toggle">
-            <button id="lang-ar" onclick="changeLanguage('ar')">العربية</button>
-            <button id="lang-en" onclick="changeLanguage('en')">English</button>
-        </div>
-    </header>
+<body class="app-layout">
+  <header class="app-header">
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <h1 class="logo-text"></h1>
+    <button class="lang-btn" onclick="toggleLanguage()">🌐</button>
+  </header>
 
-    <section id="clients">
+  <aside class="side-menu hidden" id="sideMenu">
+    <nav>
+      <ul>
+        <li><a href="index.html">🏠 الرئيسية</a></li>
+        <li><a href="services.html">📋 خدماتنا</a></li>
+        <li><a href="about.html">👤 من نحن</a></li>
+        <li><a href="clients.html">🤝 عملاؤنا</a></li>
+        <li><a href="contact.html">📞 اتصل بنا</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <main class="app-content">
+    <section class="card-section">
+      <div class="card">
         <h2>بعض عملائنا</h2>
-        <div class="client-logos">
-            <div class="client-logo">
-                <img src="assets/css/client1.png" alt="بعض عملائنا">
-            </div>
-            <div class="client-logo">
-                <img src="assets/images/client2.png" alt="">
-            </div>
-            <div class="client-logo">
-                <img src="assets/images/client3.png" alt="">
-            </div>
-        </div>
+        <p>تشرفنا بالتعامل مع عدد من الجهات والشركات البارزة محليًا ودوليًا، ونفخر بثقتهم بخدماتنا القانونية.</p>
+      </div>
+ <div class="card">
+        <img src="assets/images/client.png" alt=""></div>
+<img src="assets/images/client.png" alt="">
     </section>
+  </main>
 
-    <footer>
-        <p data-lang="footer">© 2025 شركة الدكتور محمد الأشيقر. جميع الحقوق محفوظة.</p>
-    </footer>
+  <footer class="app-footer">
+    © 2025 شركة الدكتور محمد الأشيقر. جميع الحقوق محفوظة.
+  </footer>
 
-    <!-- تضمين JavaScript -->
-    <script src="js/script.js"></script>
+  
+  <script>
+    function toggleMenu() {
+      document.getElementById('sideMenu').classList.toggle('hidden');
+    }
+
+    function toggleLanguage() {
+      const body = document.body;
+      if (body.classList.contains('en')) {
+        body.classList.remove('en');
+        body.setAttribute('lang', 'ar');
+      } else {
+        body.classList.add('en');
+        body.setAttribute('lang', 'en');
+      }
+    }
+
+    function toggleMenu() {
+      document.getElementById('sideMenu').classList.toggle('hidden');
+    }
+    function toggleLanguage() {
+      alert('🚧 سيتم دعم اللغة الإنجليزية قريبًا');
+    }
+  </script>
 </body>
 </html>

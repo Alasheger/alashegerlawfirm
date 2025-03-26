@@ -1,63 +1,84 @@
+
 <!DOCTYPE html>
 <html lang="ar">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>اتصل بنا - شركة الدكتور محمد الأشيقر</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <!-- إضافة مكتبة أيقونات Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>اتصل بنا - شركة الدكتور محمد الأشيقر</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <div class="logo-container">
-            <img src="assets/images/logo.jpg" alt="شعار شركة الدكتور محمد الأشيقر" class="logo">
-        </div>
-        <nav>
-            <nav>
-            <ul>
-<li><a href="index.html" class="nav-link" data-lang="home">الصفحة الرئيسية</a></li>
-<li><a href="services.html" class="nav-link" data-lang="services">خدماتنا</a></li>
-<li><a href="about.html" class="nav-link" data-lang="about">من نحن</a></li>
-<li><a href="clients.html" class="nav-link" data-lang="clients">بعض عملائنا</a></li> <li><a href="contact.html" class="nav-link" data-lang="contact">اتصل بنا</a></li>
-            </ul>
-        </nav>
-<!-- زر تغيير اللغة -->
-        <div class="language-toggle">
-            <button id="lang-ar" onclick="changeLanguage('ar')">العربية</button>
-            <button id="lang-en" onclick="changeLanguage('en')">English</button>
-        </div>
-    </header>
+<body class="app-layout">
+  <header class="app-header">
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <h1 class="logo-text"></h1>
+    <button class="lang-btn" onclick="toggleLanguage()">🌐</button>
+  </header>
 
-    <section id="contact-form">
+  <aside class="side-menu hidden" id="sideMenu">
+    <nav>
+      <ul>
+        <li><a href="index.html">🏠 الرئيسية</a></li>
+        <li><a href="services.html">📋 خدماتنا</a></li>
+        <li><a href="about.html">👤 من نحن</a></li>
+        <li><a href="clients.html">🤝 عملاؤنا</a></li>
+        <li><a href="contact.html">📞 اتصل بنا</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <main class="app-content">
+    <section class="card-section">
+      <div class="card">
         <h2>اتصل بنا</h2>
-        <form action="#">
-            <label for="name">الاسم الكامل</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">البريد الإلكتروني</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">رسالتك</label>
-            <textarea id="message" name="message" required></textarea>
-
-            <button type="submit">إرسال</button>
-        </form>
+        <p>يمكنكم التواصل معنا عبر البريد الإلكتروني أو الهاتف أو زيارة مقرنا الرسمي.</p>
+        <p>📧 info@alashegerlawfirm.com</p>
+        <p>📞 +966-580-333-346</p>
+      </div>
     </section>
-
-    <!-- إضافة وسائل التواصل الاجتماعي -->
+<section class="card">
+  <h2 class="lang-ar">موقعنا على الخريطة</h2>
+  <h2 class="lang-en hidden">Our Location</h2>
+  <div style="width: 100%; height: 300px;">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3575.856253100803!2d50.20156651066036!3d26.33115377690261!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e49e844c659f569%3A0x9d163a76cddbb06b!2z2YXZg9iq2Kgg2KfZhNiv2YPYqtmI2LEg2YXYrdmF2K8g2KfZhNin2LTZitmC2LEg2YTZhNmF2K3Yp9mF2KfYqSDZiNin2YTYpdiz2KrYtNin2LHYp9iqINin2YTZgtin2YbZiNmG2YrYqQ!5e0!3m2!1sen!2ssa!4v1742964664559!5m2!1sen!2ssa" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</section>
+ <!-- إضافة وسائل التواصل الاجتماعي -->
     <section id="social-media">
         <a href="https://www.facebook.com/yourpage" target="_blank"><i class="fab fa-facebook-f"></i></a>
         <a href="https://twitter.com/yourprofile" target="_blank"><i class="fab fa-twitter"></i></a>
         <a href="https://www.instagram.com/yourprofile" target="_blank"><i class="fab fa-instagram"></i></a>
         <a href="https://wsend.co/966580333346" target="_blank"><i class="fab fa-whatsapp"></i></a>
     </section>
+  </main>
 
-    <footer>
-        <p data-lang="footer">© 2025 شركة الدكتور محمد الأشيقر. جميع الحقوق محفوظة.</p>
-    </footer>
+  <footer class="app-footer">
+    © 2025 شركة الدكتور محمد الأشيقر. جميع الحقوق محفوظة.
+  </footer>
 
-    <!-- تضمين JavaScript -->
-    <script src="js/script.js"></script>
+  
+  <script>
+    function toggleMenu() {
+      document.getElementById('sideMenu').classList.toggle('hidden');
+    }
+
+    function toggleLanguage() {
+      const body = document.body;
+      if (body.classList.contains('en')) {
+        body.classList.remove('en');
+        body.setAttribute('lang', 'ar');
+      } else {
+        body.classList.add('en');
+        body.setAttribute('lang', 'en');
+      }
+    }
+
+    function toggleMenu() {
+      document.getElementById('sideMenu').classList.toggle('hidden');
+    }
+    function toggleLanguage() {
+      alert('🚧 سيتم دعم اللغة الإنجليزية قريبًا');
+    }
+  </script>
 </body>
 </html>
