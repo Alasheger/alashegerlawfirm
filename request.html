@@ -1,0 +1,437 @@
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>شركة الدكتور محمد الأشيقر</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="app-layout">
+  <header class="app-header">
+    <button id="menu-btn" class="toggle-btn" onclick="toggleSidebar()">☰ القائمة</button>
+    <h1 class="logo-text"></h1>
+    <button class="lang-btn" onclick="toggleLanguage()">🌐</button>
+  </header>
+
+  <aside class="side-menu hidden" id="sideMenu">
+    <nav>
+      <ul>
+        <li><a href="index.html"> الرئيسية</a></li>
+        <li><a href="services.html"> خدماتنا</a></li>
+        <li><a href="about.html"> من نحن</a></li>
+        <li><a href="clients.html"> عملاؤنا</a></li>
+        <li><a href="team.html">أسرتنا</a></li>
+        <li><a href="request.html">إطلب خدمة</a></li>
+        <li><a href="news.html">الأخبار والمقالات</a></li>
+        <li><a href="contact.html"> اتصل بنا</a></li>
+      </ul>
+    </nav>
+  </aside>
+  <main class="app-content">
+    <section class="hero">
+      <h1>إطلب ما تريد ونحن نحقق مصالحك</h1>
+      <p>خدمات قانونية محترفة بمعايير عالمية</p>
+      <a href="index.html" class="cta-button">الرجوع إلى الرئيسية </a>
+    </section>
+
+   <header>
+  <h1>حجز استشارة قانونية</h1>
+</header>
+
+<section class="form-container">
+  <form action="https://formsubmit.co/info@alashegerlawfirm.com" method="POST">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="table">
+    
+    <div class="form-group">
+      <label for="name">الاسم الكامل</label>
+      <input type="text" id="name" name="الاسم الكامل" required />
+    </div>
+
+    <div class="form-group">
+      <label for="email">البريد الإلكتروني</label>
+      <input type="email" id="email" name="البريد الإلكتروني" required />
+    </div>
+
+    <div class="form-group">
+      <label for="phone">رقم الجوال</label>
+      <input type="text" id="phone" name="رقم الجوال" required />
+    </div>
+
+    <div class="form-group">
+      <label for="date">تاريخ الاستشارة</label>
+      <input type="date" id="date" name="تاريخ الاستشارة" required />
+    </div>
+
+    <div class="form-group">
+      <label for="platform">اختر المنصة</label>
+      <select id="platform" name="المنصة المفضلة" required>
+        <option value="Zoom">Zoom</option>
+        <option value="Microsoft Teams">Microsoft Teams</option>
+        <option value="جوال مباشر">جوال مباشر</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="details">تفاصيل الاستشارة</label>
+      <textarea id="details" name="تفاصيل الاستشارة" rows="4" required></textarea>
+    </div>
+
+    <button type="submit">إرسال الطلب</button>
+  </form>
+</section>
+<header>
+  <h1>الدفع الإلكتروني</h1>
+</header>
+
+<div class="payment-box">
+  <h2>استشارة قانونية أون لاين</h2>
+  <p>سعر الاستشارة: 500 ريال سعودي</p>
+  <a class="pay-button" href="https://form.moyasar.com/quick-invoice/demo-example" target="_blank">
+    ادفع الآن عبر Moyasar
+  </a>
+</div>
+<header>
+  <h1>طلب قضية قانونية</h1>
+</header>
+
+<section class="form-container">
+  <form action="https://formsubmit.co/info@alashegerlawfirm.com" method="POST">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="table">
+
+    <div class="form-group">
+      <label for="name">الاسم الكامل</label>
+      <input type="text" id="name" name="الاسم الكامل" required />
+    </div>
+
+    <div class="form-group">
+      <label for="phone">رقم الجوال</label>
+      <input type="text" id="phone" name="رقم الجوال" required />
+    </div>
+
+    <div class="form-group">
+      <label for="caseType">نوع القضية</label>
+      <select id="caseType" name="نوع القضية" required>
+        <option value="تجارية">قضية تجارية</option>
+        <option value="أحوال شخصية">أحوال شخصية</option>
+        <option value="إدارية">قضية إدارية</option>
+        <option value="جنائية">قضية جنائية</option>
+        <option value="أخرى">أخرى</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="details">تفاصيل القضية</label>
+      <textarea id="details" name="تفاصيل القضية" rows="5" required></textarea>
+    </div>
+
+    <div class="note">
+      سيتم مراجعة الطلب من قبل فريقنا القانوني، وتحديد السعر بعد مراجعة المستندات والتفاصيل.
+    </div>
+
+    <button type="submit">إرسال الطلب</button>
+  </form>
+</section>
+<header>
+  <h1>طلب تحكيم</h1>
+</header>
+
+<section class="form-container">
+  <form action="https://formsubmit.co/info@alashegerlawfirm.com" method="POST">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="table">
+
+    <div class="form-group">
+      <label for="name">الاسم الكامل</label>
+      <input type="text" id="name" name="الاسم الكامل" required />
+    </div>
+
+    <div class="form-group">
+      <label for="phone">رقم الجوال</label>
+      <input type="text" id="phone" name="رقم الجوال" required />
+    </div>
+
+    <div class="form-group">
+      <label for="disputeType">نوع النزاع</label>
+      <input type="text" id="disputeType" name="نوع النزاع" required />
+    </div>
+
+    <div class="form-group">
+      <label for="agreement">هل توجد اتفاقية تحكيم؟</label>
+      <select id="agreement" name="اتفاقية التحكيم" required>
+        <option value="نعم">نعم</option>
+        <option value="لا">لا</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="details">تفاصيل النزاع</label>
+      <textarea id="details" name="تفاصيل النزاع" rows="5" required></textarea>
+    </div>
+
+    <div class="note">
+      سيتم دراسة النزاع من قبل فريق التحكيم المختص، والرد عليكم لتحديد الإجراءات والرسوم لاحقًا.
+    </div>
+
+    <button type="submit">إرسال الطلب</button>
+  </form>
+</section>
+<header>
+  <h1>طلب خدمة قانونية</h1>
+</header>
+
+<section class="form-container">
+  <form action="https://formsubmit.co/info@alashegerlawfirm.com" method="POST">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="table">
+
+    <div class="form-group">
+      <label for="name">الاسم الكامل</label>
+      <input type="text" id="name" name="الاسم الكامل" required />
+    </div>
+
+    <div class="form-group">
+      <label for="phone">رقم الجوال</label>
+      <input type="text" id="phone" name="رقم الجوال" required />
+    </div>
+
+    <div class="form-group">
+      <label for="serviceType">نوع الخدمة القانونية</label>
+      <select id="serviceType" name="نوع الخدمة القانونية" required>
+        <option value="صياغة عقد">صياغة عقد</option>
+        <option value="مراجعة عقد">مراجعة عقد</option>
+        <option value="استشارة قانونية مكتوبة">استشارة مكتوبة</option>
+        <option value="إعداد مذكرة قانونية">إعداد مذكرة</option>
+        <option value="أخرى">أخرى</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="details">تفاصيل الخدمة المطلوبة</label>
+      <textarea id="details" name="تفاصيل الخدمة" rows="5" required></textarea>
+    </div>
+
+    <div class="note">
+      سيتم مراجعة الطلب من قبل الفريق المختص، وتحديد السعر بعد الاطلاع على التفاصيل والمستندات إن وُجدت.
+    </div>
+
+    <button type="submit">إرسال الطلب</button>
+  </form>
+</section>
+<header>
+  <h1>طلباتي السابقة</h1>
+</header>
+
+<section class="requests-container" id="requestList">
+  <p class="no-requests">لا توجد طلبات محفوظة على هذا الجهاز.</p>
+</section>
+<header>
+  <h1>تتبع حالة الطلب</h1>
+</header>
+
+<div class="track-box">
+  <form onsubmit="showMessage(event)">
+    <label for="contact">رقم الجوال أو البريد الإلكتروني</label>
+    <input type="text" id="contact" name="contact" placeholder="05XXXXXXXX أو example@email.com" required />
+    <button type="submit">تتبع الطلب</button>
+  </form>
+  <div class="message" id="resultMessage" style="display: none;">
+    شكراً! سيتم الرد على طلبك خلال 24 ساعة عبر البريد أو الجوال.
+  </div>
+</div>
+  </main>
+
+  <footer class="app-footer">
+    © 2025 شركة الدكتور محمد الأشيقر. جميع الحقوق محفوظة.
+  </footer>
+<!-- AlashegerPro Icon and Overlay -->
+  <div class="alasheger-icon" onclick="openOverlay()">الأشيقر برو</div>
+  <div class="alasheger-overlay" id="alashegerOverlay">
+    <div class="alasheger-content">
+      <div class="close-overlay" onclick="closeOverlay()">×</div>
+      <h2>مرحبًا بك في AlashegerPro</h2>
+      <p>إنتظرونا قريبا بإذن الله</p>
+      <button class="enter-btn" onclick="goToPlatform()">ادخل الآن</button>
+    </div>
+  </div>
+  <!-- زر واتساب -->
+<a href="https://wa.me/966580333346" target="_blank" class="whatsapp-float" title="تواصل عبر واتساب">
+  <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp" />
+</a>
+<style>
+  .whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 999;
+  }
+  
+</style>
+<!-- زر واتساب داخلي -->
+<a href="https://wa.me/966580333346" target="_blank" class="whatsapp-float" title="تواصل عبر واتساب">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="52" height="52">
+    <path fill="#25D366" d="M16 0C7.164 0 0 7.163 0 16a15.89 15.89 0 002.32 8.292L0 32l8.047-2.258A15.932 15.932 0 0016 32c8.836 0 16-7.163 16-16S24.836 0 16 0z"/>
+    <path fill="#FFF" d="M24.366 22.286c-.366-.183-2.17-1.07-2.507-1.192-.338-.122-.585-.183-.833.184-.246.366-.954 1.192-1.17 1.437-.216.245-.43.275-.796.092-.366-.184-1.548-.57-2.95-1.818-1.091-.974-1.828-2.178-2.042-2.544-.215-.366-.023-.563.161-.747.166-.165.366-.43.549-.646.184-.215.245-.366.368-.61.122-.244.062-.458-.03-.647-.091-.184-.832-2.007-1.14-2.745-.3-.722-.602-.627-.833-.638l-.707-.013c-.245 0-.64.092-.975.458-.337.367-1.28 1.25-1.28 3.046 0 1.796 1.309 3.534 1.492 3.778.183.244 2.573 3.92 6.235 5.498 3.663 1.578 3.663 1.052 4.33.985.668-.061 2.17-.885 2.477-1.738.307-.853.307-1.582.215-1.737-.091-.153-.336-.244-.702-.427z"/>
+  </svg>
+</a>
+<style>
+  .whatsapp-float {
+    position: right;
+    bottom: 20px;
+    left: 20px;
+    z-index: 999;
+  }
+.whatsapp-float img {
+    width: 50px;
+    height: 50px;
+  }
+
+ header {
+      background: #2C3E50;
+      color: white;
+      padding: 40px 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+.track-box {
+      max-width: 500px;
+      margin: 60px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .track-box label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    .track-box input {
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      margin-bottom: 20px;
+    }
+
+    .track-box button {
+      background: #f39c12;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .track-box button:hover {
+      background: #e67e22;
+    }
+
+    .message {
+      margin-top: 20px;
+      font-size: 16px;
+      color: #2C3E50;
+      font-weight: bold;
+    }
+
+</style>
+  <script>
+    function toggleSidebar() {
+  var sidebar = document.querySelector('.side-menu');
+  sidebar.classList.toggle('hidden');
+}
+
+    function toggleLanguage() {
+      const body = document.body;
+      if (body.classList.contains('en')) {
+        body.classList.remove('en');
+        body.setAttribute('lang', 'ar');
+      } else {
+        body.classList.add('en');
+        body.setAttribute('lang', 'en');
+      }
+    }
+    function toggleLanguage() {
+      alert('🚧 سيتم دعم اللغة الإنجليزية قريبًا');
+    }
+function openOverlay() {
+      document.getElementById('alashegerOverlay').style.display = 'flex';
+    }
+    function closeOverlay() {
+      document.getElementById('alashegerOverlay').style.display = 'none';
+    }
+    function goToPlatform() {
+      window.location.href = "https://alashegerpro.com";
+    }
+const form = document.querySelector("form");
+  form.addEventListener("submit", function(e) {
+    const details = document.querySelector("textarea")?.value || "";
+    const requests = JSON.parse(localStorage.getItem("myRequests") || "[]");
+    const newRequest = {
+      type: "طلب تحكيم",
+      details: details,
+      date: new Date().toLocaleString()
+    };
+    requests.push(newRequest);
+    localStorage.setItem("myRequests", JSON.stringify(requests));
+  }); 
+const form = document.querySelector("form");
+  form.addEventListener("submit", function(e) {
+    const details = document.querySelector("textarea")?.value || "";
+    const requests = JSON.parse(localStorage.getItem("myRequests") || "[]");
+    const newRequest = {
+      type: "خدمة قانونية",
+      details: details,
+      date: new Date().toLocaleString()
+    };
+    requests.push(newRequest);
+    localStorage.setItem("myRequests", JSON.stringify(requests));
+  }); 
+
+const form = document.querySelector("form");
+  form.addEventListener("submit", function(e) {
+    const details = document.querySelector("textarea")?.value || "";
+    const requests = JSON.parse(localStorage.getItem("myRequests") || "[]");
+    const newRequest = {
+      type: "قضية قانونية",
+      details: details,
+      date: new Date().toLocaleString()
+    };
+    requests.push(newRequest);
+    localStorage.setItem("myRequests", JSON.stringify(requests));
+  }); 
+ const requests = JSON.parse(localStorage.getItem("myRequests") || "[]");
+  const container = document.getElementById("requestList");
+  if (requests.length > 0) {
+    container.innerHTML = "";
+    requests.forEach((req, index) => {
+      const div = document.createElement("div");
+      div.className = "request-item";
+      div.innerHTML = `
+        <p><strong>نوع الطلب:</strong> ${req.type}</p>
+        <p><strong>التفاصيل:</strong> ${req.details}</p>
+        <p><strong>تاريخ الإرسال:</strong> ${req.date}</p>
+      `;
+      container.appendChild(div);
+    });
+  }
+
+function showMessage(e) {
+    e.preventDefault();
+    document.getElementById("resultMessage").style.display = "block";
+  }
+  </script>
+</body>
+</html>

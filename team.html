@@ -32,25 +32,37 @@
 
   <main class="app-content">
     <section class="hero">
-      <h1>مرحبًا بكم في شركة الدكتور محمد الأشيقر</h1>
-      <p>خدمات قانونية محترفة بمعايير عالمية</p>
+      <h1>أسرة شركة الدكتور محمد الإشيقر</h1>
+      <p>الصفحة في طور التحديث والتجديد ، نبي فريق عمل محترف للفترة القادمة</p>
       <a href="services.html" class="cta-button">اكتشف خدماتنا</a>
     </section>
 
-    <section class="card-section">
-      <div class="card">
-        <h2>التحكيم</h2>
-        <p>نقدم خدمات التحكيم التجاري وفقًا لأفضل الممارسات الدولية والمحلية.</p>
-      </div>
-      <div class="card">
-        <h2>الاستشارات</h2>
-        <p>استشارات قانونية دقيقة ومتخصصة للشركات والأفراد.</p>
-      </div>
-       <div class="card">
-        <h2>التمثيل القانوني</h2>
-        <p>نمثل عملائنا وفق أعلى معايير المهنية ،الكفاءة والخبرة والمصداقية .</p>
-      </div>
-    </section>
+    <header>
+  <h1>فريق العمل</h1>
+</header>
+
+<section class="team-container">
+  <div class="team-member">
+    <img src="https://via.placeholder.com/100" alt="الرئيس التنفيذي" />
+    <h3>د. محمد الأشيقر</h3>
+    <p>الرئيس التنفيذي - خبير التحكيم التجاري</p>
+  </div>
+  <div class="team-member">
+    <img src="https://via.placeholder.com/100" alt="محامية أولى" />
+    <h3>أ. سلطان القحطاني</h3>
+    <p>محامي أولى - قضايا الشركات والتحكيم</p>
+  </div>
+  <div class="team-member">
+    <img src="https://via.placeholder.com/100" alt="مستشار قانوني" />
+    <h3>أ. سعود العتسيس</h3>
+    <p>محامي أولي - القضايا المدنية والجزائية</p>
+  </div>
+  <div class="team-member">
+    <img src="https://via.placeholder.com/100" alt="سكرتير قانوني" />
+    <h3>أ. طيف الجعيد</h3>
+    <p>محامية أولى -قضايا الشركات والقضايا المدنية</p>
+  </div>
+</section>
   </main>
 
   <footer class="app-footer">
@@ -77,7 +89,71 @@
     left: 20px;
     z-index: 999;
   }
-  
+   body {
+      font-family: 'Cairo', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      direction: rtl;
+    }
+
+    header {
+      background-color: #2C3E50;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+    .team-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 40px 20px;
+    }
+
+    .team-member {
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      padding: 20px;
+      width: 260px;
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .team-member img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+
+    .team-member h3 {
+      margin: 10px 0 5px;
+      color: #2C3E50;
+    }
+
+    .team-member p {
+      font-size: 14px;
+      color: #666;
+      margin: 0;
+    }
+
+    footer {
+      background-color: #2C3E50;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      margin-top: 40px;
+    }
 </style>
 <!-- زر واتساب داخلي -->
 <a href="https://wa.me/966580333346" target="_blank" class="whatsapp-float" title="تواصل عبر واتساب">

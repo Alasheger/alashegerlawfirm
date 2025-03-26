@@ -7,10 +7,12 @@
   <title>اتصل بنا - شركة الدكتور محمد الأشيقر</title>
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+ <!-- إضافة مكتبة أيقونات Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body class="app-layout">
   <header class="app-header">
-    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <button id="menu-btn" class="toggle-btn" onclick="toggleSidebar()">☰ القائمة</button>
     <h1 class="logo-text"></h1>
     <button class="lang-btn" onclick="toggleLanguage()">🌐</button>
   </header>
@@ -18,16 +20,24 @@
   <aside class="side-menu hidden" id="sideMenu">
     <nav>
       <ul>
-        <li><a href="index.html">🏠 الرئيسية</a></li>
-        <li><a href="services.html">📋 خدماتنا</a></li>
-        <li><a href="about.html">👤 من نحن</a></li>
-        <li><a href="clients.html">🤝 عملاؤنا</a></li>
-        <li><a href="contact.html">📞 اتصل بنا</a></li>
+        <li><a href="index.html"> الرئيسية</a></li>
+        <li><a href="services.html"> خدماتنا</a></li>
+        <li><a href="about.html"> من نحن</a></li>
+        <li><a href="clients.html"> عملاؤنا</a></li>
+        <li><a href="team.html">أسرتنا</a></li>
+        <li><a href="request.html">إطلب خدمة</a></li>
+        <li><a href="news.html">الأخبار والمقالات</a></li>
+        <li><a href="contact.html"> اتصل بنا</a></li>
       </ul>
     </nav>
   </aside>
 
   <main class="app-content">
+<section class="hero">
+      <h1>التواصل</h1>
+      <p>تواصلكم هو بداية علاقتنا الناجحة بإذن الله تعالى فلا تتردد</p>
+      <a href="request.html" class="cta-button">طلب الخدمات مباشرة</a>
+    </section>
     <section class="card-section">
       <div class="card">
         <h2>اتصل بنا</h2>
@@ -51,16 +61,36 @@
         <a href="https://wsend.co/966580333346" target="_blank"><i class="fab fa-whatsapp"></i></a>
     </section>
   </main>
+<style>
+/* وسائل التواصل الاجتماعي */
+#social-media {
+    text-align: center;
+    margin: 20px 0;
+}
 
+#social-media a {
+    margin: 0 10px;
+    font-size: 30px;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+#social-media a:hover {
+    color: #f39c12;
+}
+
+</style>
   <footer class="app-footer">
     © 2025 شركة الدكتور محمد الأشيقر. جميع الحقوق محفوظة.
   </footer>
 
   
   <script>
-    function toggleMenu() {
-      document.getElementById('sideMenu').classList.toggle('hidden');
-    }
+   function toggleSidebar() {
+  var sidebar = document.querySelector('.side-menu');
+  sidebar.classList.toggle('hidden');
+}
 
     function toggleLanguage() {
       const body = document.body;
@@ -71,10 +101,6 @@
         body.classList.add('en');
         body.setAttribute('lang', 'en');
       }
-    }
-
-    function toggleMenu() {
-      document.getElementById('sideMenu').classList.toggle('hidden');
     }
     function toggleLanguage() {
       alert('🚧 سيتم دعم اللغة الإنجليزية قريبًا');

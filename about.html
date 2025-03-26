@@ -10,7 +10,7 @@
 </head>
 <body class="app-layout">
   <header class="app-header">
-    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <button id="menu-btn" class="toggle-btn" onclick="toggleSidebar()">☰ القائمة</button>
     <h1 class="logo-text"></h1>
     <button class="lang-btn" onclick="toggleLanguage()">🌐</button>
   </header>
@@ -18,16 +18,24 @@
   <aside class="side-menu hidden" id="sideMenu">
     <nav>
       <ul>
-        <li><a href="index.html">🏠 الرئيسية</a></li>
-        <li><a href="services.html">📋 خدماتنا</a></li>
-        <li><a href="about.html">👤 من نحن</a></li>
-        <li><a href="clients.html">🤝 عملاؤنا</a></li>
-        <li><a href="contact.html">📞 اتصل بنا</a></li>
+        <li><a href="index.html"> الرئيسية</a></li>
+        <li><a href="services.html"> خدماتنا</a></li>
+        <li><a href="about.html"> من نحن</a></li>
+        <li><a href="clients.html"> عملاؤنا</a></li>
+        <li><a href="team.html">أسرتنا</a></li>
+        <li><a href="request.html">إطلب خدمة</a></li>
+        <li><a href="news.html">الأخبار والمقالات</a></li>
+        <li><a href="contact.html"> اتصل بنا</a></li>
       </ul>
     </nav>
   </aside>
 
   <main class="app-content">
+<section class="hero">
+      <h1>بكل تأكيد نحن في خدمتكم</h1>
+      <p>نسعى لخدمتكم بأعلى معايير الجودة والمهنية</p>
+      <a href="request.html" class="cta-button">إطلب خدمات</a>
+    </section>
     <section class="card-section">
       <div class="card">
         <h2>من نحن</h2>
@@ -75,9 +83,10 @@
 
   
   <script>
-    function toggleMenu() {
-      document.getElementById('sideMenu').classList.toggle('hidden');
-    }
+   function toggleSidebar() {
+  var sidebar = document.querySelector('.side-menu');
+  sidebar.classList.toggle('hidden');
+}
 
     function toggleLanguage() {
       const body = document.body;
@@ -88,10 +97,6 @@
         body.classList.add('en');
         body.setAttribute('lang', 'en');
       }
-    }
-
-    function toggleMenu() {
-      document.getElementById('sideMenu').classList.toggle('hidden');
     }
     function toggleLanguage() {
       alert('🚧 سيتم دعم اللغة الإنجليزية قريبًا');
