@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شركة الدكتور محمد الأشيقر للمحاماة والتحكيم والاستشارات القانونية</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header>
+        <!-- الشعار الآن يمتد على كامل الصفحة أو على أحد الجانبين -->
+        <div class="logo-container">
+            <img src="assets/images/logo.jpg" alt="شعار شركة الدكتور محمد الأشيقر" class="logo">
+        </div>
+        <nav>
+            <nav>
+            <ul>
+<li><a href="index.html" class="nav-link" data-lang="home">الصفحة الرئيسية</a></li>
+<li><a href="services.html" class="nav-link" data-lang="services">خدماتنا</a></li>
+<li><a href="about.html" class="nav-link" data-lang="about">من نحن</a></li>
+<li><a href="clients.html" class="nav-link" data-lang="clients">بعض عملائنا</a></li> <li><a href="contact.html" class="nav-link" data-lang="contact">اتصل بنا</a></li>
+            </ul>
+        </nav>
+<!-- زر تغيير اللغة -->
+        <div class="language-toggle">
+            <button id="lang-ar" onclick="changeLanguage('ar')">العربية</button>
+            <button id="lang-en" onclick="changeLanguage('en')">English</button>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h1 data-lang="welcome">مرحبًا بكم في شركة الدكتور محمد الأشيقر</h1>
+            <p data-lang="description">نحن نقدم خدمات قانونية متميزة في مجالات المحاماة والتحكيم والاستشارات القانونية.</p>
+            <a href="services.html" class="cta-button" data-lang="explore">اكتشف خدماتنا</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>نبذة عن شركة الدكتور محمد الأشيقر للمحاماة والتحكيم والاستشارات القانونية</h2>
+        <p>بعض عنا </p>
+     <p>إن شركة الدكتور محمد الأشيقر للمحاماة والتحكيم والاستشارات القانونية، من أفضل شركات المحاماة في المنطقة الشرقية والمملكة العربية السعودية، حيث حرصت منذ تأسيسها على تقديم الاستشارات القانونية، التحكيم التجاري، والتمثيل القانوني، تأسيس الشركات، وأعمال المحاماة في كافة القضايا، مع التركيز على كسب ثقة العملاء من خلال تقديم خدمات عالية الكفاءة والموثوقية.</p>
+        <p>يعمل فريقنا المحترف على تلبية احتياجات عملائنا المتزايدة بفعالية، ملتزمين بمعايير الجودة في أداء الخدمات القانونية. كما تقدم الشركة استشاراتها للشركات الناشئة المحلية والدولية، المؤسسات المالية، الهيئات الحكومية، والكيانات المملوكة. كما تركز على بناء علاقات طويلة الأمد مع عملائها وتعزيز التعاون المستمر.</p>
+        <p>يتمتع محامو الشركة بمهارات متقدمة في التعامل مع القضايا الدولية والمحلية، حيث يتحدثون اللغتين العربية والإنجليزية، مما يسهل عليهم تقديم الدعم القانوني لجميع العملاء، بالإضافة للعقود والمنازعات الدولية، والتحكيم التجاري الدولي والمحلي وغيرها الكثير. تؤمن الشركة بأن المحامي المتميز ليس فقط صاحب خبرة قانونية، بل يجب أن يتحلى بالأخلاق المهنية العالية لضمان النجاح وبناء الثقة مع العملاء.</p>
+    </section>
+
+    <footer>
+        <p data-lang="footer">© 2025 شركة الدكتور محمد الأشيقر. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <!-- تضمين JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
