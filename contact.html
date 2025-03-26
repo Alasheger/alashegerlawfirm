@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اتصل بنا - شركة الدكتور محمد الأشيقر</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- إضافة مكتبة أيقونات Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="assets/images/logo.jpg" alt="شعار شركة الدكتور محمد الأشيقر" class="logo">
+        </div>
+        <nav>
+            <nav>
+            <ul>
+<li><a href="index.html" class="nav-link" data-lang="home">الصفحة الرئيسية</a></li>
+<li><a href="services.html" class="nav-link" data-lang="services">خدماتنا</a></li>
+<li><a href="about.html" class="nav-link" data-lang="about">من نحن</a></li>
+<li><a href="clients.html" class="nav-link" data-lang="clients">بعض عملائنا</a></li> <li><a href="contact.html" class="nav-link" data-lang="contact">اتصل بنا</a></li>
+            </ul>
+        </nav>
+<!-- زر تغيير اللغة -->
+        <div class="language-toggle">
+            <button id="lang-ar" onclick="changeLanguage('ar')">العربية</button>
+            <button id="lang-en" onclick="changeLanguage('en')">English</button>
+        </div>
+    </header>
+
+    <section id="contact-form">
+        <h2>اتصل بنا</h2>
+        <form action="#">
+            <label for="name">الاسم الكامل</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">البريد الإلكتروني</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">رسالتك</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">إرسال</button>
+        </form>
+    </section>
+
+    <!-- إضافة وسائل التواصل الاجتماعي -->
+    <section id="social-media">
+        <a href="https://www.facebook.com/yourpage" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com/yourprofile" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/yourprofile" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://wsend.co/966580333346" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </section>
+
+    <footer>
+        <p data-lang="footer">© 2025 شركة الدكتور محمد الأشيقر. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <!-- تضمين JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>

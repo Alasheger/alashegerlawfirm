@@ -1,0 +1,357 @@
+/* إعدادات الأساسيات */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    direction: rtl; /* اللغة الافتراضية العربية */
+}
+
+/* تغيير الاتجاه للغة الإنجليزية */
+body.en {
+    direction: ltr; /* للإنجليزية */
+}
+
+/* تصميم الشعار */
+header {
+    background-color: #2C3E50;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    max-width: 80%;  /* الشعار يمتد ليأخذ مساحة عرض كبيرة */
+    height: auto;
+}
+
+/* زر تغيير اللغة */
+.language-toggle {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.language-toggle button {
+    padding: 10px 20px;
+    margin: 0 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #f39c12;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.language-toggle button:hover {
+    background-color: #e67e22;
+}
+
+/* تحسين التنقل */
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f39c12; /* تغيير اللون عند التمرير */
+}
+
+/* تنسيق قسم Hero */
+#hero {
+    background-color: #34495E;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+#hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: #f39c12;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #e67e22;
+}
+
+/* تنسيق قسم About */
+#about {
+    padding: 50px 20px;
+    background-color: white;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* تخصيص الفوتر */
+footer {
+    background-color: #2C3E50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+}
+
+/* تنسيق قسم "من نحن" */
+#about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+#about h2, #about p {
+    text-align: center;
+}
+
+/* إضافة هذا الكود في ملف styles.css */
+
+/* توسيط محتوى #service-details */
+#service-details {
+    padding: 50px 20px;
+    background-color: white;
+    text-align: center;  /* توسيط النصوص داخل القسم */
+}
+
+#service-details h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.service-detail {
+    margin-bottom: 40px; /* إضافة مساحة بين العناصر */
+}
+
+.service-detail h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.service-detail p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto; /* توسيط الفقرة */
+}
+
+/* تخصيص للأجهزة الصغيرة */
+@media (max-width: 768px) {
+    #service-details h2 {
+        font-size: 30px;
+    }
+
+    .service-detail h3 {
+        font-size: 24px;
+    }
+
+    .service-detail p {
+        font-size: 16px;
+    }
+}
+
+/* تخصيص لصور عملائنا */
+#clients {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: white;
+}
+
+#clients h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.client-logos {
+    display: flex;
+    justify-content: center;  /* توسيط الصور */
+    align-items: center;  /* توسيط الصور عموديًا */
+    gap: 20px;  /* إضافة مسافة بين الصور */
+    flex-wrap: wrap;  /* السماح بلف الصور عند ضيق المساحة */
+    width: 100%;
+}
+
+.client-logo {
+    flex: 1;
+    max-width: 100%;
+    margin: 20px;
+}
+
+.client-logo img {
+    width: 100%;
+    height: auto;
+    max-height: 400px; /* تعيين أقصى ارتفاع للصور */
+    object-fit: contain; /* الحفاظ على تناسق الصورة */
+}
+
+/* تنسيق قسم الاتصال */
+#contact-form {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#contact-form h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#contact-form label {
+    font-size: 18px;
+    margin-bottom: 8px;
+    display: block;
+}
+
+#contact-form input, #contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#contact-form button {
+    background-color: #f39c12;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#contact-form button:hover {
+    background-color: #e67e22;
+}
+
+/* وسائل التواصل الاجتماعي */
+#social-media {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#social-media a {
+    margin: 0 10px;
+    font-size: 30px;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+#social-media a:hover {
+    color: #f39c12;
+}
+
+footer {
+    text-align: center;
+    background-color: #2C3E50;
+    color: white;
+    padding: 20px;
+}
+
+/* تأثيرات الانتقال */
+section.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* تخصيص للأجهزة الصغيرة */
+@media (max-width: 768px) {
+    .logo {
+        max-width: 100%;
+    }
+
+    #hero h1 {
+        font-size: 32px;
+    }
+
+    #hero p {
+        font-size: 18px;
+    }
+
+    .cta-button {
+        padding: 12px 25px;
+        font-size: 16px;
+    }
+
+    #about h2 {
+        font-size: 30px;
+    }
+
+    #about p {
+        font-size: 16px;
+    }
+
+    .client-logo img {
+        max-height: 250px;  /* تقليص حجم الصور في الأجهزة الصغيرة */
+    }
+}
