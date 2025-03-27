@@ -5,15 +5,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>شركة الدكتور محمد الأشيقر</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#2C3E50" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body class="app-layout">
   <header class="app-header">
+  <div class="header-left">
+    <img src="logo.jpg" alt="شعار الأشيقر" class="logo" />
+    <div class="logo-text">
+      <h1>شركة الدكتور محمد الأشيقر</h1>
+      <p>للمحاماة والتحكيم والاستشارات القانونية</p>
+    </div>
+  </div>
+
+  <div class="header-right">
     <button id="menu-btn" class="toggle-btn" onclick="toggleSidebar()">☰ القائمة</button>
-    <h1 class="logo-text"></h1>
     <button class="lang-btn" onclick="toggleLanguage()">🌐</button>
-  </header>
+  </div>
+</header>
+
 
   <aside class="side-menu hidden" id="sideMenu">
     <nav>
@@ -126,6 +141,9 @@ function openOverlay() {
     function goToPlatform() {
       window.location.href = "https://alashegerpro.com";
     }
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('service-worker.js');
+  }
   </script>
 </body>
 </html>

@@ -1,4 +1,66 @@
 
+body {
+      margin: 0;
+      font-family: 'Cairo', sans-serif;
+      direction: rtl;
+      background-color: #f9f9f9;
+    }
+
+ 
+   .app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  direction: rtl;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo {
+  height: 75px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.logo-text h1 {
+  margin: 0;
+  font-size: 20px;
+  color: #2C3E50;
+  font-weight: bold;
+}
+
+.logo-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #A67C00;
+}
+
+.header-right {
+  display: flex;
+  gap: 10px;
+}
+
+.toggle-btn, .lang-btn {
+  background-color: #2C3E50;
+  color: #fff;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.toggle-btn:hover, .lang-btn:hover {
+  background-color: #1A252F;
+}
+
+
 .alasheger-icon {
       position: fixed;
       bottom: 20px;
@@ -57,17 +119,6 @@ body {
   direction: rtl;
 }
 
-.app-header {
-  background: url('logo.jpg') no-repeat center center;
-  background-size: cover;
-  height: 200px; /* يمكنك تغييره مثلاً إلى 250 أو أكثر */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 20px;
-  color: white;
-  position: relative;
-}
 
 .logo-text {
   font-size: 28px;
@@ -307,3 +358,26 @@ body.en .side-menu {
       background-color: #e67e22;
     }
 
+.grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 40px;
+    }
+    .grid a {
+      display: block;
+      width: 200px;
+      height: 140px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+      padding: 10px;
+    }
+    .grid img {
+      max-width: 100%;
+      max-height: 120px;
+      object-fit: contain;
+    }
